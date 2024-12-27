@@ -11,28 +11,28 @@ path = filedialog.askopenfilename(
 )
 
 menu = {
-    "Cheesy Bread" : '',
-    "Mozz Cheese Bread" : '',
-    "Pepperoni & Cheese" : '',
-    "Ultimate 3 Cheese" : '',
-    "Calzone" : '',
-    "Paulzone" : '',
-    "Catering Wings" : '',
-    "Wings" : '',
-    "Dessert" : '',
-    "Big Double Chocolate Cake" : '',
-    "Giant Cookie" : '',
-    "Oreo Cheesecake" : '',
-    "Red Velvet Cake" : '',
-    "Strawberry Cheesecake" : '',
-    "Jumbo Wings (8pc)" : '',
-    "Drinks" : '',
-    "Drinks Totals" : '',
-    "Pizza" : '',
-    "Pizza Totals" : '',
+    "Cheesy Bread" : f'=(C{cell.row}*4+D2*7)/16',
+    "Mozz Cheese Bread" : f'=(C{cell.row}*4+D2*7)/16',
+    "Pepperoni & Cheese" : f'=(C{cell.row}*4+D2*7)/16',
+    "Ultimate 3 Cheese" : f'=(C{cell.row}*4+D2*7)/16',
+    "Calzone" : f'=C{cell.row}*3/16',
+    "Paulzone" : f'=C{cell.row}*3/16',
+    "Catering Wings" : '', # No Equation for this yet
+    "Wings" : '', # No Equation for this yet
+    "Dessert" : '', # No Equation for this yet
+    "Big Double Chocolate Cake" : f'C{cell.row}',
+    "Giant Cookie" : f'C{cell.row}',
+    "Oreo Cheesecake" : f'C{cell.row}',
+    "Red Velvet Cake" : f'C{cell.row}',
+    "Strawberry Cheesecake" : f'C{cell.row}',
+    "Jumbo Wings (8pc)" : '', # No Equation for this yet
+    "Drinks" : '', # Equation is self evident
+    "Drinks Totals" : '', # Equation is self evident
+    "Pizza" : '', 
+    "Pizza Totals" : f'=(C{cell.row}*2.5+D{cell.row}*4+E{cell.row}*5.5+F{cell.row}*7.5+G{cell.row}*22+H{cell.row}*4)/16',
     "Slice" : '',
-    "2 Slices" : '',
-    "Pizza Slice" : '',
+    "2 Slices" : f'=C{cell.row}*5/16',
+    "Pizza Slice" : f'=C{cell.row}*2.5/16',
     "Subs" : '',
     "Ham" : '',
     "Italian" : '',
